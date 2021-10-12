@@ -2,7 +2,7 @@
 
 defined('ABSPATH') || exit;
 
-$Name = 'Example';//first letter must be capital
+$Name = ucfirst(basename(__FILE__, '.php'));//first letter must be capital
 $name = strtolower($Name);
 $Plural = '';
 $Plural = $Plural !== '' ? $Plural : $Name;
