@@ -27,10 +27,7 @@ class MyCustomPostTypes
             if($theCPTFilename === '.' || $theCPTFilename === '..'){
                 continue;
             }
-
-            $theCPTName = explode('.', $theCPTFilename);
-            $theCPTName = $theCPTName[0]; //the name is at zero
-
+            $theCPTName = str_replace('.php', '', $theCPTFilename);
             $registerPostType = new CreatePostTypes($theCPTName);
             $registerPostType->newPostType();
         }
