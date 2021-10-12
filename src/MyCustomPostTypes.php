@@ -2,6 +2,8 @@
 
 namespace MCPT;
 
+defined('ABSPATH') || exit;
+
 use MCPT\CreatePostTypes;
 
 class MyCustomPostTypes

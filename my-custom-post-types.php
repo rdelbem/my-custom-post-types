@@ -23,6 +23,8 @@
  * Update URI:        
  */
 
+defined('ABSPATH') || exit;
+
  //Composer autoload
  require_once plugin_dir_path(__FILE__) . "/vendor/autoload.php";
 

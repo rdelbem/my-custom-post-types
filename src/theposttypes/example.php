@@ -1,5 +1,7 @@
 <?php 
 
+defined('ABSPATH') || exit;
+
 $Name = 'Example';//first letter must be capital
 $name = strtolower($Name);
 $Plural = '';
